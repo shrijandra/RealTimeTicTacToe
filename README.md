@@ -4,11 +4,21 @@ When we Enter User1 it continuously search for next user to be log in.
 copy all the file to /var/www/html/ of EC2 instance.
 To run application install npm in EC2 instance
 Then install dependencies: npm i express http nodemon socket.io
-socket.io is for realtime connection, index.js is backend http server
+web socket enable instance data exchange between two player in real time.
+socket.io library that enables realtime event based communication between client and server, index.js is backend http server
+React on front end and Node js in backend.
 The node js application is listening at port 3000, so we need to type www.shrijandra.net:3000, www.shrijandra.net only shows static page
 
 
 ![image](https://github.com/shrijandra/RealTimeTicTacToe/assets/108766166/59cfc1d9-dae7-4ee1-89f6-6881fdb83757)
+
+when application is stop pm2 stop index
+![image](https://github.com/shrijandra/RealTimeTicTacToe/assets/108766166/901420ff-0a92-44ce-8c8e-67a69470fe8b)
+
+To start the application pm2 start index, nodemon index will also work but if disconnect the SSH connection the application will stop running, so we install pm2.
+![image](https://github.com/shrijandra/RealTimeTicTacToe/assets/108766166/620d2dad-2f6d-4ff4-b090-c347df503be1)
+
+
 
 I use winscp app to copy the file from local to remote AWS EC2 instance.
 
