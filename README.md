@@ -1,3 +1,15 @@
+This multiplayer Tic-Tac-Toe is deployed in EC2 instance and use a A record for shrijandra.net map to public IP of EC2 instance.
+Others:created A record for www.shrijandra.net map to shrijandra.net, www.saish.shrijandra.net map to shrijandra.net
+When we Enter User1 it continuously search for next user to be log in.
+copy all the file to /var/www/html/ of EC2 instance.
+To run application install npm in EC2 instance
+Then install dependencies: npm i express http nodemon socket.io
+socket.io is for realtime connection, index.js is backend http server
+The node js application is listening at port 3000, so we need to type www.shrijandra.net:3000, www.shrijandra.net only shows static page
+
+
+![image](https://github.com/shrijandra/RealTimeTicTacToe/assets/108766166/59cfc1d9-dae7-4ee1-89f6-6881fdb83757)
+
 I use winscp app to copy the file from local to remote AWS EC2 instance.
 
 I use method 1 to run app continuously
